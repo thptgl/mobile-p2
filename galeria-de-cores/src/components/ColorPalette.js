@@ -3,7 +3,9 @@ import ColorBox from './ColorBox';
 import './styles.css';
 
 const ColorPalette = () => {
-  const [colors, setColors] = useState(['#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F3']);
+  const [colors, setColors] = useState([
+    '#FF5733', '#33FF57', '#3357FF', '#F3FF33', '#FF33F3'
+  ]);
   const [newColor, setNewColor] = useState('#000000');
 
   const addColor = () => {
@@ -16,7 +18,14 @@ const ColorPalette = () => {
     setColors(colors.filter(color => color !== colorToRemove));
   };
 
-  olor(e.target.value)} 
+  return (
+    <div className="palette-container">
+      <h1>Galeria de Cores Interativa</h1>
+      <div className="color-input">
+        <input 
+          type="color" 
+          value={newColor} 
+          onChange={(e) => setNewColor(e.target.value)} 
         />
         <button onClick={addColor}>Adicionar Cor</button>
       </div>

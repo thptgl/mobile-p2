@@ -13,6 +13,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+  
   h1 {
     color: #333;
     text-align: center;
@@ -33,7 +34,6 @@ body {
   }
   
   .color-input button {
-
     padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
@@ -63,8 +63,28 @@ body {
     color: white;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     position: relative;
-    box-shadow: 0 3p
-
-    .delete-btn:hover {
-      background: rgba(0, 0, 0, 0.5);
-    }
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .color-box span {
+    font-weight: bold;
+  }
+  
+  .delete-btn {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    align-self: flex-end;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .delete-btn:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
